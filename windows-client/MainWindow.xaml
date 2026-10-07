@@ -1,0 +1,44 @@
+<Window x:Class="EonDesktop.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Eon Cloud" Height="600" Width="800">
+    <Grid>
+        <!-- Login Panel -->
+        <StackPanel x:Name="LoginPanel" HorizontalAlignment="Center" VerticalAlignment="Center" Width="300">
+            <TextBlock Text="Connect this Device" FontSize="24" HorizontalAlignment="Center" Margin="0,0,0,10"/>
+            <TextBlock Text="Enter the Device Authorization Token generated from the Web App to mount your Eon Drive." FontSize="12" Foreground="Gray" TextWrapping="Wrap" TextAlignment="Center" Margin="0,0,0,20"/>
+            <TextBox x:Name="TokenBox" Margin="0,0,0,20" Padding="5" />
+            <Button Content="Connect" Padding="10" Click="LoginButton_Click" />
+            <TextBlock x:Name="ErrorText" Foreground="Red" Margin="0,10,0,0" TextWrapping="Wrap" />
+        </StackPanel>
+
+        <!-- Main Panel -->
+        <Grid x:Name="MainPanel" Visibility="Collapsed" Margin="20">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                <TextBlock x:Name="DriveNameText" Text="Eon Drive (E:\)" FontSize="20" FontWeight="Bold"/>
+                <Button Content="Refresh" Margin="20,0,0,0" Padding="5,0" Click="RefreshButton_Click"/>
+                <Button Content="Upload File" Margin="10,0,0,0" Padding="5,0" Click="UploadButton_Click"/>
+                <Button Content="Logout" Margin="10,0,0,0" Padding="5,0" Click="LogoutButton_Click"/>
+            </StackPanel>
+            
+            <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="0,10,0,10" HorizontalAlignment="Right">
+                <TextBlock Text="↓ 0 KB/s" x:Name="DownloadSpeedText" Foreground="Green" Margin="0,0,15,0" FontWeight="Bold"/>
+                <TextBlock Text="↑ 0 KB/s" x:Name="UploadSpeedText" Foreground="Blue" FontWeight="Bold"/>
+            </StackPanel>
+            <ListView x:Name="FileListView" Grid.Row="1">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Header="Name" DisplayMemberBinding="{Binding Name}" Width="250"/>
+                        <GridViewColumn Header="Size (Bytes)" DisplayMemberBinding="{Binding Size}" Width="100"/>
+                        <GridViewColumn Header="Status" DisplayMemberBinding="{Binding Status}" Width="100"/>
+                        <GridViewColumn Header="Created" DisplayMemberBinding="{Binding CreatedAt}" Width="150"/>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+        </Grid>
+    </Grid>
+</Window>

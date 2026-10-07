@@ -1,0 +1,971 @@
+<!DOCTYPE html><html lang="en" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Eon Space — Home</title>
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "bg-canvas": "#F7F5F0",
+            "secondary-fixed": "#dbe1ff",
+            "on-primary-fixed": "#00174b",
+            "on-error": "#ffffff",
+            "outline": "#737686",
+            "secondary-fixed-dim": "#b4c5ff",
+            "on-secondary": "#ffffff",
+            "primary-fixed": "#dbe1ff",
+            "on-surface-variant": "#434655",
+            "on-tertiary-container": "#ffede6",
+            "folder-projects": "#8B5CF6",
+            "on-background": "#1c1b1b",
+            "surface-hover": "#ECEAE5",
+            "background": "#fcf9f8",
+            "error-container": "#ffdad6",
+            "folder-videos": "#F97316",
+            "surface-selected": "#E5E1D8",
+            "surface-primary": "#FFFFFF",
+            "inverse-primary": "#b4c5ff",
+            "folder-downloads": "#64748B",
+            "text-muted": "#777777",
+            "on-secondary-fixed": "#00174b",
+            "on-primary": "#ffffff",
+            "border-base": "#DDD9D0",
+            "surface-secondary": "#F1EFEA",
+            "on-tertiary-fixed": "#360f00",
+            "inverse-on-surface": "#f3f0ef",
+            "folder-personal": "#EC4899",
+            "tertiary-container": "#bc4800",
+            "surface-container": "#f0edec",
+            "on-secondary-container": "#394c84",
+            "folder-music": "#10B981",
+            "folder-documents": "#2563EB",
+            "on-primary-container": "#eeefff",
+            "surface-variant": "#e5e2e1",
+            "text-secondary": "#555555",
+            "on-error-container": "#93000a",
+            "folder-work": "#0D9488",
+            "secondary-container": "#acbfff",
+            "surface-container-low": "#f6f3f2",
+            "surface-container-high": "#ebe7e7",
+            "outline-variant": "#c3c6d7",
+            "surface-container-highest": "#e5e2e1",
+            "surface-bright": "#fcf9f8",
+            "on-surface": "#1c1b1b",
+            "tertiary": "#943700",
+            "on-primary-fixed-variant": "#003ea8",
+            "surface-tint": "#0053db",
+            "secondary": "#495c95",
+            "tertiary-fixed-dim": "#ffb596",
+            "folder-photos": "#F59E0B",
+            "inverse-surface": "#313030",
+            "primary": "#004ac6",
+            "tertiary-fixed": "#ffdbcd",
+            "on-tertiary-fixed-variant": "#7d2d00",
+            "surface": "#fcf9f8",
+            "primary-fixed-dim": "#b4c5ff",
+            "primary-container": "#2563eb",
+            "surface-container-lowest": "#ffffff",
+            "text-primary": "#111111",
+            "error": "#ba1a1a",
+            "on-secondary-fixed-variant": "#31447b",
+            "on-tertiary": "#ffffff",
+            "surface-dim": "#dcd9d9"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "space-xs": "0.25rem",
+            "space-xl": "2rem",
+            "margin": "1.5rem",
+            "gutter": "1rem",
+            "space-md": "1rem",
+            "space-lg": "1.5rem",
+            "space-sm": "0.5rem"
+          },
+          "fontFamily": {
+            "headline-md": ["Montserrat"],
+            "body-sm": ["Montserrat"],
+            "body-lg": ["Montserrat"],
+            "headline-lg": ["Montserrat"],
+            "display": ["Montserrat"],
+            "headline-sm": ["Montserrat"],
+            "body-md": ["Montserrat"],
+            "label-md": ["Montserrat"],
+            "label-lg": ["Montserrat"],
+            "label-sm": ["Montserrat"]
+          },
+          "fontSize": {
+            "headline-md": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }],
+            "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+            "headline-lg": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600" }],
+            "display": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+            "headline-sm": ["16px", { "lineHeight": "24px", "fontWeight": "600" }],
+            "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+            "label-md": ["12px", { "lineHeight": "16px", "fontWeight": "500" }],
+            "label-lg": ["14px", { "lineHeight": "20px", "fontWeight": "600" }],
+            "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.02em", "fontWeight": "500" }]
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 20;
+      font-size: 20px;
+      line-height: 1;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    .material-symbols-fill {
+      font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 20;
+    }
+    /* Subtle custom scrollbar */
+    ::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+    ::-webkit-scrollbar-track {
+      background: transparent;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #DDD9D0;
+      border-radius: 9999px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #737686;
+    }
+  </style>
+</head>
+<body class="bg-bg-canvas text-text-primary font-body-md text-body-md antialiased h-screen w-screen overflow-hidden flex flex-col select-none">
+<!-- TOP BAR (Exact Shared Component TopNavBar Logic) -->
+<header class="sticky top-0 z-30 flex items-center justify-between h-16 px-space-lg w-full bg-surface-primary dark:bg-surface-container-lowest border-b border-border-base dark:border-outline-variant shrink-0">
+<!-- Left: Brand / Breadcrumbs -->
+<div class="flex items-center gap-space-lg">
+<div class="flex items-center gap-2">
+<span class="w-8 h-8 rounded-lg bg-primary-container text-surface-primary flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined material-symbols-fill text-surface-primary" style="font-size: 22px;">cloud</span>
+</span>
+<span class="text-headline-md font-headline-md font-bold text-text-primary dark:text-on-surface tracking-tight">Eon Cloud</span>
+</div>
+<div class="h-4 w-[1px] bg-border-base hidden md:block"></div>
+<!-- Breadcrumbs Desktop Flow -->
+<nav aria-label="Breadcrumb" class="hidden sm:flex items-center gap-space-xs text-body-md font-body-md">
+<button class="text-text-muted hover:text-text-primary transition-colors flex items-center gap-1 font-medium">
+<span class="">Eon Space</span>
+</button>
+<span class="text-text-muted material-symbols-outlined" style="font-size: 16px;">chevron_right</span>
+<button class="text-text-primary font-semibold flex items-center gap-1">
+<span class="">Projects</span>
+</button>
+<span class="text-text-muted material-symbols-outlined" style="font-size: 16px;">arrow_drop_down</span>
+</nav>
+</div>
+<!-- Center: Global Search Bar -->
+<div class="flex-1 max-w-md mx-space-lg hidden md:block">
+<div class="relative flex items-center">
+<span class="absolute left-3 text-text-muted pointer-events-none flex items-center">
+<span class="material-symbols-outlined">search</span>
+</span>
+<input class="w-full bg-surface-secondary text-text-primary text-body-sm font-body-sm placeholder:text-text-muted pl-10 pr-24 py-2 rounded-lg border border-border-base focus:outline-none focus:border-primary-container transition-all" placeholder="Search files, folders, tags..." type="text">
+<div class="absolute right-2.5 flex items-center gap-1 px-1.5 py-0.5 rounded bg-surface-primary border border-border-base text-text-muted text-[10px] font-label-sm tracking-wider">
+<span class="">⌘</span>
+<span class="">K</span>
+</div>
+</div>
+</div>
+<!-- Right: Actions & User Avatar -->
+<div class="flex items-center gap-space-sm">
+<!-- Sync Status Pill -->
+<div class="hidden lg:flex items-center gap-1.5 px-space-sm py-1 rounded-full bg-surface-secondary border border-border-base text-body-sm font-body-sm text-text-secondary">
+<span class="w-2 h-2 rounded-full bg-folder-music animate-pulse"></span>
+<span class="text-label-sm font-label-sm text-text-secondary">All Synced</span>
+</div>
+<!-- Action Icons -->
+<button class="relative p-2 text-text-secondary hover:text-text-primary hover:bg-surface-hover rounded-lg transition-colors duration-150" title="Notifications">
+<span class="material-symbols-outlined">notifications</span>
+<span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-folder-videos ring-2 ring-surface-primary"></span>
+</button>
+<button class="p-2 text-text-secondary hover:text-text-primary hover:bg-surface-hover rounded-lg transition-colors duration-150" title="Help &amp; Support">
+<span class="material-symbols-outlined">help_outline</span>
+</button>
+<div class="h-6 w-[1px] bg-border-base mx-1 hidden sm:block"></div>
+<!-- User Avatar Profile -->
+<button class="flex items-center gap-2 pl-1 pr-2 py-1 rounded-lg hover:bg-surface-hover transition-colors duration-150 text-left">
+<div class="relative">
+<img class="w-8 h-8 rounded-full object-cover border border-border-base shadow-sm" data-alt="Editorial portrait photograph of Alex Morgan, a design technologist with clean modern styling, soft natural studio lighting against warm neutral beige background, conveying professionalism and minimal aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNK7nqgCHuj_4A-wbshmwWBlytEMBvMwBk79XIDUTYYgGbsHzQJ1EtIUQoFPvHH9Xn3kksY4WeZduwWoxM3WZEqV6gm_z1p98NDERfjfGFAB-XVru-kDtl4uVoxKgW4Ogm-P_-v928Bh6Wv_ZKlZ0wYwrgVDfEkf9YmVcxgjTZ6T8ATasNLu59RDACJjXK6LOxqFbMBI5oWfMXAElP4cDx3nj9YQbMJbTh1QzbJ8-b5UoTiBZH7f6ryw">
+<span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-folder-music border-2 border-surface-primary"></span>
+</div>
+<div class="hidden xl:flex flex-col">
+<span class="text-label-md font-label-md text-text-primary leading-tight">Alex Morgan</span>
+<span class="text-label-sm font-label-sm text-text-muted leading-tight">Pro Workspace</span>
+</div>
+<span class="material-symbols-outlined text-text-muted hidden xl:inline" style="font-size: 16px;">keyboard_arrow_down</span>
+</button>
+</div>
+</header>
+<!-- BODY WORKSPACE CONTAINER -->
+<div class="flex-1 flex overflow-hidden relative">
+<!-- LEFT SIDEBAR (SideNavBar Shared Component Specification) -->
+<aside class="w-64 h-full flex flex-col justify-between p-space-md border-r border-border-base bg-surface-secondary shrink-0 overflow-y-auto z-20">
+<!-- Top Section of Sidebar -->
+<div class="space-y-5">
+<!-- Workspace Switcher Header -->
+<div class="flex items-center justify-between px-2 py-1.5 rounded-lg bg-surface-primary border border-border-base">
+<div class="flex items-center gap-2 min-w-0">
+<div class="w-7 h-7 rounded-md bg-secondary-fixed text-primary flex items-center justify-center font-bold text-xs">
+              EP
+            </div>
+<div class="truncate">
+<p class="text-label-md font-label-md text-text-primary leading-none truncate">Eon Cloud</p>
+<p class="text-label-sm font-label-sm text-text-muted leading-none mt-1">Personal Workspace</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-text-muted" style="font-size: 18px;">unfold_more</span>
+</div>
+<!-- Primary CTA: + Upload File -->
+<button class="w-full flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg bg-[#111111] hover:bg-neutral-800 text-white font-headline-sm text-headline-sm transition-all duration-150 shadow-sm active:scale-[0.98]"><span class="material-symbols-outlined" style="font-size: 20px;">add</span><span class="text-label-lg font-label-lg text-white">+ Upload File</span></button>
+<!-- Navigation Group: Core Tabs -->
+<div>
+<span class="px-space-md text-[11px] font-label-sm font-semibold tracking-wider text-text-muted uppercase">Workspace</span>
+<nav class="mt-1.5 space-y-0.5">
+<!-- Active Nav Item: Eon Space -->
+<a class="flex items-center gap-space-sm px-space-md py-space-sm bg-surface-selected text-primary font-semibold rounded-lg" href="#">
+<span class="material-symbols-outlined material-symbols-fill" style="font-size: 19px;">cloud_queue</span>
+<span class="text-label-lg font-label-lg">Eon Space</span>
+</a>
+<!-- Inactive Nav: My Files -->
+<a class="flex items-center justify-between px-space-md py-space-sm text-text-secondary rounded-lg hover:bg-surface-hover transition-colors duration-150" href="#">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined" style="font-size: 19px;">folder</span>
+<span class="text-label-lg font-label-lg">My Files</span>
+</div>
+<span class="text-label-sm font-label-sm text-text-muted">1,721</span>
+</a>
+<!-- Inactive Nav: Recent -->
+<a class="flex items-center gap-space-sm px-space-md py-space-sm text-text-secondary rounded-lg hover:bg-surface-hover transition-colors duration-150" href="#">
+<span class="material-symbols-outlined" style="font-size: 19px;">schedule</span>
+<span class="text-label-lg font-label-lg">Recent</span>
+</a>
+<!-- Inactive Nav: Favorites -->
+<a class="flex items-center gap-space-sm px-space-md py-space-sm text-text-secondary rounded-lg hover:bg-surface-hover transition-colors duration-150" href="#">
+<span class="material-symbols-outlined" style="font-size: 19px;">star</span>
+<span class="text-label-lg font-label-lg">Favorites</span>
+</a>
+<!-- Inactive Nav: Shared -->
+<a class="flex items-center justify-between px-space-md py-space-sm text-text-secondary rounded-lg hover:bg-surface-hover transition-colors duration-150" href="#">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined" style="font-size: 19px;">folder_shared</span>
+<span class="text-label-lg font-label-lg">Shared</span>
+</div>
+<span class="px-1.5 py-0.2 bg-secondary-fixed text-primary text-[10px] font-label-sm rounded-full">3</span>
+</a>
+<!-- Inactive Nav: Trash -->
+<a class="flex items-center gap-space-sm px-space-md py-space-sm text-text-secondary rounded-lg hover:bg-surface-hover transition-colors duration-150" href="#">
+<span class="material-symbols-outlined" style="font-size: 19px;">delete</span>
+<span class="text-label-lg font-label-lg">Trash</span>
+</a>
+</nav>
+</div>
+<!-- Navigation Group: Devices Section -->
+<div>
+<span class="px-space-md text-[11px] font-label-sm font-semibold tracking-wider text-text-muted uppercase">Devices</span>
+<nav class="mt-1.5 space-y-0.5">
+<a class="flex items-center justify-between px-space-md py-1.5 text-text-secondary rounded-lg hover:bg-surface-hover transition-colors duration-150" href="#">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined" style="font-size: 18px;">laptop_mac</span>
+<span class="text-body-md font-body-md">MacBook Pro 16″</span>
+</div>
+<span class="w-2 h-2 rounded-full bg-folder-music"></span>
+</a>
+<a class="flex items-center justify-between px-space-md py-1.5 text-text-secondary rounded-lg hover:bg-surface-hover transition-colors duration-150" href="#">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined" style="font-size: 18px;">phone_android</span>
+<span class="text-body-md font-body-md">Galaxy S24 Ultra</span>
+</div>
+<span class="w-2 h-2 rounded-full bg-folder-music"></span>
+</a>
+</nav>
+</div>
+<!-- Navigation Group: System & Tools -->
+<div>
+<span class="px-space-md text-[11px] font-label-sm font-semibold tracking-wider text-text-muted uppercase">System</span>
+<nav class="mt-1.5 space-y-0.5">
+<a class="flex items-center gap-space-sm px-space-md py-1.5 text-text-secondary rounded-lg hover:bg-surface-hover transition-colors duration-150" href="#">
+<span class="material-symbols-outlined" style="font-size: 18px;">sync_alt</span>
+<span class="text-body-md font-body-md">Activity</span>
+</a>
+<a class="flex items-center gap-space-sm px-space-md py-1.5 text-text-secondary rounded-lg hover:bg-surface-hover transition-colors duration-150" href="#">
+<span class="material-symbols-outlined" style="font-size: 18px;">credit_card</span>
+<span class="text-body-md font-body-md">Billing</span>
+</a>
+<a class="flex items-center gap-space-sm px-space-md py-1.5 text-text-secondary rounded-lg hover:bg-surface-hover transition-colors duration-150" href="#">
+<span class="material-symbols-outlined" style="font-size: 18px;">settings</span>
+<span class="text-body-md font-body-md">Settings</span>
+</a>
+<a class="flex items-center gap-space-sm px-space-md py-1.5 text-text-secondary rounded-lg hover:bg-surface-hover transition-colors duration-150" href="#">
+<span class="material-symbols-outlined" style="font-size: 18px;">help</span>
+<span class="text-body-md font-body-md">Help</span>
+</a>
+</nav>
+</div>
+</div>
+<!-- Bottom Storage Status Card (Required in prompt) -->
+<div class="mt-4 pt-3 border-t border-border-base">
+<div class="bg-surface-primary rounded-xl p-3.5 border border-border-base shadow-sm">
+<div class="flex items-center justify-between mb-2">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary-container" style="font-size: 18px;">cloud</span>
+<span class="text-label-md font-label-md text-text-primary">Cloud Storage</span>
+</div>
+<span class="text-label-sm font-label-sm font-semibold text-text-primary">70%</span>
+</div>
+<!-- Progress Bar -->
+<div class="w-full bg-surface-secondary h-2 rounded-full overflow-hidden mb-2">
+<div class="bg-primary-container h-full rounded-full transition-all duration-300" style="width: 70%;"></div>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm text-text-muted mb-3">
+<span class="">Storage: 1.4 TB of 2 TB used</span>
+</div>
+<button class="w-full py-1.5 px-3 rounded-lg bg-surface-secondary hover:bg-surface-hover border border-border-base text-text-primary text-label-md font-label-md transition-colors text-center">
+            Manage Storage
+          </button>
+</div>
+</div>
+</aside>
+<!-- CENTER FLUID FILE BROWSER CANVAS -->
+<main class="flex-1 flex flex-col h-full bg-bg-canvas overflow-y-auto overflow-x-hidden relative">
+<!-- View Header & Workspace Identity -->
+<div class="px-space-xl pt-space-lg pb-4 border-b border-border-base bg-surface-primary/40 backdrop-blur-sm sticky top-0 z-10">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+<div>
+<h1 class="text-headline-lg font-headline-lg text-text-primary font-bold tracking-tight">Eon Space</h1>
+<p class="text-body-md font-body-md text-text-secondary mt-0.5">Everything in your cloud, organized in one place.</p>
+</div>
+<!-- Quick Stats Chips -->
+<div class="flex items-center gap-2">
+<div class="px-3 py-1 rounded-lg bg-surface-primary border border-border-base text-body-sm font-body-sm text-text-secondary flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span class="">Total Items: <strong class="text-text-primary font-semibold">1,721</strong></span>
+</div>
+<div class="px-3 py-1 rounded-lg bg-surface-primary border border-border-base text-body-sm font-body-sm text-text-secondary flex items-center gap-2">
+<span class="material-symbols-outlined text-folder-photos" style="font-size: 16px;">cloud_sync</span>
+<span class="">Auto-backup Active</span>
+</div>
+</div>
+</div>
+<!-- ACTION TOOLBAR & SELECTION CONTROLS -->
+<div class="mt-4 flex flex-wrap items-center justify-between gap-3 pt-3 border-t border-border-base/70">
+<!-- Left Action Buttons & Selection Pill -->
+<div class="flex items-center flex-wrap gap-2.5">
+<!-- + New Folder Primary Action -->
+<button class="flex items-center gap-2 px-3.5 py-1.5 bg-[#111111] hover:bg-neutral-800 text-white rounded-lg text-label-md font-label-md transition-colors shadow-sm"><span class="material-symbols-outlined" style="font-size: 18px;">create_new_folder</span><span class="">+ New Folder</span></button>
+<!-- Upload Secondary Action -->
+<button class="flex items-center gap-2 px-3.5 py-1.5 bg-surface-primary hover:bg-surface-hover text-text-primary border border-border-base rounded-lg text-label-md font-label-md transition-colors shadow-sm">
+<span class="material-symbols-outlined" style="font-size: 18px;">upload_file</span>
+<span class="">Upload</span>
+</button>
+<div class="h-5 w-[1px] bg-border-base mx-1 hidden sm:block"></div>
+<!-- Active Selection Bar -->
+<div class="flex items-center gap-2 px-3 py-1.5 bg-surface-selected rounded-lg border border-border-base">
+<span class="text-label-sm font-label-sm font-semibold text-text-primary flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+                1 item selected
+              </span>
+<div class="flex items-center gap-1 ml-2 border-l border-border-base pl-2">
+<button class="p-1 hover:bg-surface-primary rounded text-text-secondary hover:text-text-primary" title="Download">
+<span class="material-symbols-outlined" style="font-size: 18px;">download</span>
+</button>
+<button class="p-1 hover:bg-surface-primary rounded text-text-secondary hover:text-text-primary" title="Share">
+<span class="material-symbols-outlined" style="font-size: 18px;">share</span>
+</button>
+<button class="p-1 hover:bg-surface-primary rounded text-text-secondary hover:text-text-primary" title="Move">
+<span class="material-symbols-outlined" style="font-size: 18px;">drive_file_move</span>
+</button>
+<button class="p-1 hover:bg-surface-primary rounded text-text-secondary hover:text-text-primary" title="More options">
+<span class="material-symbols-outlined" style="font-size: 18px;">more_horiz</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Right View Switcher & Filters -->
+<div class="flex items-center gap-2">
+<!-- Filter Sort Dropdown -->
+<div class="flex items-center gap-1.5 px-3 py-1.5 bg-surface-primary border border-border-base rounded-lg text-label-md font-label-md text-text-secondary hover:text-text-primary cursor-pointer">
+<span class="">Sort: Name</span>
+<span class="material-symbols-outlined" style="font-size: 16px;">keyboard_arrow_down</span>
+</div>
+<!-- View Switcher [Grid (active), List, Compact] -->
+<div class="flex items-center p-0.5 bg-surface-secondary border border-border-base rounded-lg">
+<button class="p-1.5 rounded-md bg-surface-primary text-text-primary shadow-xs" title="Grid View">
+<span class="material-symbols-outlined" style="font-size: 18px;">grid_view</span>
+</button>
+<button class="p-1.5 rounded-md text-text-muted hover:text-text-primary transition-colors" title="List View">
+<span class="material-symbols-outlined" style="font-size: 18px;">view_list</span>
+</button>
+<button class="p-1.5 rounded-md text-text-muted hover:text-text-primary transition-colors" title="Compact View">
+<span class="material-symbols-outlined" style="font-size: 18px;">table_rows</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- MAIN SCROLLABLE CONTENT BODY -->
+<div class="p-space-xl space-y-space-xl pb-24">
+<!-- FOLDERS SECTION -->
+<section>
+<div class="flex items-center justify-between mb-space-md">
+<div class="flex items-center gap-2">
+<h2 class="text-headline-sm font-headline-sm font-semibold text-text-primary">Folders (6)</h2>
+<span class="text-label-sm font-label-sm text-text-muted">Updated 4m ago</span>
+</div>
+<button class="text-label-md font-label-md text-primary-container hover:underline flex items-center gap-1">
+<span class="">View All</span>
+<span class="material-symbols-outlined" style="font-size: 16px;">arrow_forward</span>
+</button>
+</div>
+<!-- 3-Column / 6-Card Grid of Folders -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-space-md">
+<!-- Folder 1: Documents (Blue) -->
+<div class="group relative bg-surface-primary hover:bg-surface-hover p-4 rounded-xl border border-border-base transition-all duration-150 cursor-pointer shadow-sm hover:shadow">
+<div class="flex items-start justify-between">
+<!-- Mac-inspired folder graphic -->
+<div class="relative w-12 h-10 flex items-center justify-center">
+<div class="absolute inset-0 bg-folder-documents/15 rounded-lg border border-folder-documents/30"></div>
+<span class="material-symbols-outlined text-folder-documents material-symbols-fill" style="font-size: 28px;">folder</span>
+</div>
+<button class="text-text-muted group-hover:text-text-primary p-1 hover:bg-surface-secondary rounded transition-colors" title="Folder options">
+<span class="material-symbols-outlined" style="font-size: 18px;">more_vert</span>
+</button>
+</div>
+<div class="mt-3">
+<h3 class="text-label-lg font-label-lg font-semibold text-text-primary truncate">Documents</h3>
+<div class="flex items-center gap-2 mt-1 text-body-sm font-body-sm text-text-muted">
+<span class="">42 files</span>
+<span class="">•</span>
+<span class="">3.8 GB</span>
+</div>
+</div>
+</div>
+<!-- Folder 2: Projects (Purple - Context menu anchor) -->
+<div class="group relative bg-surface-primary hover:bg-surface-hover p-4 rounded-xl border-2 border-folder-projects/50 transition-all duration-150 cursor-pointer shadow-sm">
+<div class="flex items-start justify-between">
+<div class="relative w-12 h-10 flex items-center justify-center">
+<div class="absolute inset-0 bg-folder-projects/15 rounded-lg border border-folder-projects/30"></div>
+<span class="material-symbols-outlined text-folder-projects material-symbols-fill" style="font-size: 28px;">folder</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-folder-projects"></span>
+<button class="text-text-primary p-1 bg-surface-secondary rounded" title="Folder options">
+<span class="material-symbols-outlined" style="font-size: 18px;">more_vert</span>
+</button>
+</div>
+</div>
+<div class="mt-3">
+<h3 class="text-label-lg font-label-lg font-semibold text-text-primary truncate">Projects</h3>
+<div class="flex items-center gap-2 mt-1 text-body-sm font-body-sm text-text-muted">
+<span class="">18 files</span>
+<span class="">•</span>
+<span class="">14.2 GB</span>
+</div>
+</div>
+<!-- DESKTOP CONTEXT MENU (Open near this folder as specified) -->
+<div class="absolute -top-12 -right-4 z-40 w-56 bg-surface-primary rounded-xl border border-border-base shadow-2xl p-1.5 text-text-primary text-body-md font-body-md animate-in fade-in zoom-in-95 duration-100">
+<div class="px-2.5 py-1.5 text-[11px] font-label-sm font-semibold uppercase tracking-wider text-text-muted border-b border-border-base flex items-center justify-between">
+<span class="">Folder Actions</span>
+<span class="text-primary text-xs">Projects</span>
+</div>
+<div class="py-1 space-y-0.5">
+<button class="w-full flex items-center gap-2.5 px-2.5 py-1.5 text-left rounded-md hover:bg-surface-hover text-body-sm font-body-sm">
+<span class="material-symbols-outlined text-text-secondary" style="font-size: 16px;">folder_open</span>
+<span class="">Open</span>
+</button>
+<button class="w-full flex items-center gap-2.5 px-2.5 py-1.5 text-left rounded-md hover:bg-surface-hover text-body-sm font-body-sm">
+<span class="material-symbols-outlined text-text-secondary" style="font-size: 16px;">visibility</span>
+<span class="">Preview</span>
+</button>
+<button class="w-full flex items-center gap-2.5 px-2.5 py-1.5 text-left rounded-md hover:bg-surface-hover text-body-sm font-body-sm">
+<span class="material-symbols-outlined text-text-secondary" style="font-size: 16px;">download</span>
+<span class="">Download</span>
+</button>
+<button class="w-full flex items-center gap-2.5 px-2.5 py-1.5 text-left rounded-md hover:bg-surface-hover text-body-sm font-body-sm">
+<span class="material-symbols-outlined text-text-secondary" style="font-size: 16px;">share</span>
+<span class="">Share</span>
+</button>
+<button class="w-full flex items-center gap-2.5 px-2.5 py-1.5 text-left rounded-md hover:bg-surface-hover text-body-sm font-body-sm">
+<span class="material-symbols-outlined text-text-secondary" style="font-size: 16px;">edit</span>
+<span class="">Rename</span>
+</button>
+<button class="w-full flex items-center gap-2.5 px-2.5 py-1.5 text-left rounded-md hover:bg-surface-hover text-body-sm font-body-sm">
+<span class="material-symbols-outlined text-text-secondary" style="font-size: 16px;">drive_file_move</span>
+<span class="">Move</span>
+</button>
+<button class="w-full flex items-center gap-2.5 px-2.5 py-1.5 text-left rounded-md hover:bg-surface-hover text-body-sm font-body-sm">
+<span class="material-symbols-outlined text-text-secondary" style="font-size: 16px;">content_copy</span>
+<span class="">Copy</span>
+</button>
+<button class="w-full flex items-center gap-2.5 px-2.5 py-1.5 text-left rounded-md hover:bg-surface-hover text-body-sm font-body-sm">
+<span class="material-symbols-outlined text-text-secondary" style="font-size: 16px;">star</span>
+<span class="">Add to Favorites</span>
+</button>
+<!-- Change Color Sub-Item with Swatches -->
+<div class="px-2.5 py-1.5 rounded-md hover:bg-surface-hover">
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="flex items-center gap-2 text-text-secondary">
+<span class="material-symbols-outlined" style="font-size: 16px;">palette</span>
+<span class="">Change Color</span>
+</span>
+</div>
+<div class="flex items-center gap-1.5 mt-1.5 pl-5">
+<span class="w-3 h-3 rounded-full bg-folder-documents cursor-pointer hover:scale-125 transition-transform"></span>
+<span class="w-3 h-3 rounded-full bg-folder-projects cursor-pointer ring-2 ring-primary-container hover:scale-125 transition-transform"></span>
+<span class="w-3 h-3 rounded-full bg-folder-photos cursor-pointer hover:scale-125 transition-transform"></span>
+<span class="w-3 h-3 rounded-full bg-folder-videos cursor-pointer hover:scale-125 transition-transform"></span>
+<span class="w-3 h-3 rounded-full bg-folder-music cursor-pointer hover:scale-125 transition-transform"></span>
+<span class="w-3 h-3 rounded-full bg-folder-work cursor-pointer hover:scale-125 transition-transform"></span>
+</div>
+</div>
+<div class="h-[1px] bg-border-base my-1"></div>
+<button class="w-full flex items-center gap-2.5 px-2.5 py-1.5 text-left rounded-md hover:bg-surface-hover text-body-sm font-body-sm">
+<span class="material-symbols-outlined text-text-secondary" style="font-size: 16px;">info</span>
+<span class="">Details</span>
+</button>
+<button class="w-full flex items-center gap-2.5 px-2.5 py-1.5 text-left rounded-md hover:bg-error-container text-error text-body-sm font-body-sm">
+<span class="material-symbols-outlined" style="font-size: 16px;">delete</span>
+<span class="">Delete</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Folder 3: Photos (Yellow) -->
+<div class="group relative bg-surface-primary hover:bg-surface-hover p-4 rounded-xl border border-border-base transition-all duration-150 cursor-pointer shadow-sm hover:shadow">
+<div class="flex items-start justify-between">
+<div class="relative w-12 h-10 flex items-center justify-center">
+<div class="absolute inset-0 bg-folder-photos/15 rounded-lg border border-folder-photos/30"></div>
+<span class="material-symbols-outlined text-folder-photos material-symbols-fill" style="font-size: 28px;">folder</span>
+</div>
+<button class="text-text-muted group-hover:text-text-primary p-1 hover:bg-surface-secondary rounded transition-colors">
+<span class="material-symbols-outlined" style="font-size: 18px;">more_vert</span>
+</button>
+</div>
+<div class="mt-3">
+<h3 class="text-label-lg font-label-lg font-semibold text-text-primary truncate">Photos</h3>
+<div class="flex items-center gap-2 mt-1 text-body-sm font-body-sm text-text-muted">
+<span class="">1,240 files</span>
+<span class="">•</span>
+<span class="">48.6 GB</span>
+</div>
+</div>
+</div>
+<!-- Folder 4: Videos (Orange) -->
+<div class="group relative bg-surface-primary hover:bg-surface-hover p-4 rounded-xl border border-border-base transition-all duration-150 cursor-pointer shadow-sm hover:shadow">
+<div class="flex items-start justify-between">
+<div class="relative w-12 h-10 flex items-center justify-center">
+<div class="absolute inset-0 bg-folder-videos/15 rounded-lg border border-folder-videos/30"></div>
+<span class="material-symbols-outlined text-folder-videos material-symbols-fill" style="font-size: 28px;">folder</span>
+</div>
+<button class="text-text-muted group-hover:text-text-primary p-1 hover:bg-surface-secondary rounded transition-colors">
+<span class="material-symbols-outlined" style="font-size: 18px;">more_vert</span>
+</button>
+</div>
+<div class="mt-3">
+<h3 class="text-label-lg font-label-lg font-semibold text-text-primary truncate">Videos</h3>
+<div class="flex items-center gap-2 mt-1 text-body-sm font-body-sm text-text-muted">
+<span class="">28 files</span>
+<span class="">•</span>
+<span class="">184 GB</span>
+</div>
+</div>
+</div>
+<!-- Folder 5: Music (Green) -->
+<div class="group relative bg-surface-primary hover:bg-surface-hover p-4 rounded-xl border border-border-base transition-all duration-150 cursor-pointer shadow-sm hover:shadow">
+<div class="flex items-start justify-between">
+<div class="relative w-12 h-10 flex items-center justify-center">
+<div class="absolute inset-0 bg-folder-music/15 rounded-lg border border-folder-music/30"></div>
+<span class="material-symbols-outlined text-folder-music material-symbols-fill" style="font-size: 28px;">folder</span>
+</div>
+<button class="text-text-muted group-hover:text-text-primary p-1 hover:bg-surface-secondary rounded transition-colors">
+<span class="material-symbols-outlined" style="font-size: 18px;">more_vert</span>
+</button>
+</div>
+<div class="mt-3">
+<h3 class="text-label-lg font-label-lg font-semibold text-text-primary truncate">Music</h3>
+<div class="flex items-center gap-2 mt-1 text-body-sm font-body-sm text-text-muted">
+<span class="">310 files</span>
+<span class="">•</span>
+<span class="">6.4 GB</span>
+</div>
+</div>
+</div>
+<!-- Folder 6: Work (Teal) -->
+<div class="group relative bg-surface-primary hover:bg-surface-hover p-4 rounded-xl border border-border-base transition-all duration-150 cursor-pointer shadow-sm hover:shadow">
+<div class="flex items-start justify-between">
+<div class="relative w-12 h-10 flex items-center justify-center">
+<div class="absolute inset-0 bg-folder-work/15 rounded-lg border border-folder-work/30"></div>
+<span class="material-symbols-outlined text-folder-work material-symbols-fill" style="font-size: 28px;">folder</span>
+</div>
+<button class="text-text-muted group-hover:text-text-primary p-1 hover:bg-surface-secondary rounded transition-colors">
+<span class="material-symbols-outlined" style="font-size: 18px;">more_vert</span>
+</button>
+</div>
+<div class="mt-3">
+<h3 class="text-label-lg font-label-lg font-semibold text-text-primary truncate">Work</h3>
+<div class="flex items-center gap-2 mt-1 text-body-sm font-body-sm text-text-muted">
+<span class="">85 files</span>
+<span class="">•</span>
+<span class="">9.1 GB</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- RECENT FILES SECTION (Rich Interactive Grid/List Cards) -->
+<section>
+<div class="flex items-center justify-between mb-space-md">
+<div>
+<h2 class="text-headline-sm font-headline-sm font-semibold text-text-primary">Recent Files</h2>
+<p class="text-body-sm font-body-sm text-text-muted">Files touched recently across your synced devices</p>
+</div>
+<div class="flex items-center gap-2">
+<button class="text-body-sm font-body-sm text-text-secondary hover:text-text-primary px-2.5 py-1 rounded bg-surface-primary border border-border-base">Filter: All Types</button>
+</div>
+</div>
+<!-- File Grid Cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-space-md">
+<!-- File 1: product-video.mp4 (ACTIVE SELECTED STATE: #E5E1D8 border #2563EB) -->
+<div class="bg-surface-selected rounded-xl p-3.5 border-2 border-primary-container relative shadow-sm cursor-pointer transition-all">
+<!-- Selection Indicator Checkbox Checked -->
+<div class="absolute top-3 left-3 z-10 w-5 h-5 rounded bg-primary-container flex items-center justify-center text-surface-primary shadow-xs">
+<span class="material-symbols-outlined" style="font-size: 15px;">check</span>
+</div>
+<!-- Top Action -->
+<div class="flex justify-end">
+<button class="p-1 rounded text-text-secondary hover:text-text-primary hover:bg-surface-primary">
+<span class="material-symbols-outlined" style="font-size: 18px;">more_horiz</span>
+</button>
+</div>
+<!-- Media Thumbnail Mockup -->
+<div class="mt-1 relative h-32 rounded-lg bg-surface-secondary border border-border-base overflow-hidden flex items-center justify-center group">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="High quality film still preview frame showing modern architectural studio interior with warm soft daylighting, clean wooden surfaces, minimal glass panels, and ambient atmospheric depth." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA_5eeLnLwIV3i3BlX-MFe7460J9ztxly_X-Ko1x2VxykNUyyJXdOXADD471xhk9vuBQ5BOrKGJbDK78_vqquEBDx6GCTN2eCxagP7w3HYZ-MY41AvsEevX_38V2dASH2WW-ScV-X7pcN_VKOyrB9EXhy5x62I0Ss6fHPMef9QH32_Ci-cSriUb0_D4LXXdXhvIrb-bocr17ptYl9Ec6OloBzstBQ9kzKmOtUVsiEBllvxmuCFwYWhdUQ')"></div>
+<div class="absolute inset-0 bg-text-primary/20 backdrop-blur-[1px]"></div>
+<!-- Play button badge -->
+<div class="w-10 h-10 rounded-full bg-surface-primary/90 text-text-primary flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined material-symbols-fill" style="font-size: 22px;">play_arrow</span>
+</div>
+<span class="absolute bottom-2 right-2 px-1.5 py-0.5 rounded bg-text-primary/80 text-surface-primary text-[10px] font-label-sm">04:18</span>
+</div>
+<!-- File Info -->
+<div class="mt-3">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-folder-videos" style="font-size: 18px;">movie</span>
+<span class="text-label-md font-label-md font-semibold text-text-primary truncate">product-video.mp4</span>
+</div>
+<div class="flex items-center justify-between mt-2 pt-2 border-t border-border-base text-body-sm font-body-sm text-text-secondary">
+<span class="">2.4 GB • Today</span>
+<span class="inline-flex items-center gap-1 text-[11px] font-medium text-folder-music">
+<span class="w-1.5 h-1.5 rounded-full bg-folder-music"></span>
+                    Cloud Synced
+                  </span>
+</div>
+</div>
+</div>
+<!-- File 2: proposal.pdf -->
+<div class="bg-surface-primary hover:bg-surface-hover rounded-xl p-3.5 border border-border-base relative shadow-sm cursor-pointer transition-all duration-150">
+<!-- Top Action -->
+<div class="flex items-center justify-between">
+<span class="px-2 py-0.5 rounded bg-error-container text-error text-[10px] font-label-sm font-semibold uppercase">PDF</span>
+<button class="p-1 rounded text-text-muted hover:text-text-primary hover:bg-surface-secondary">
+<span class="material-symbols-outlined" style="font-size: 18px;">more_horiz</span>
+</button>
+</div>
+<!-- Document Preview Mockup -->
+<div class="mt-2 h-32 rounded-lg bg-surface-secondary border border-border-base p-3 flex flex-col justify-between">
+<div class="space-y-1.5">
+<div class="h-2 w-3/4 bg-border-base rounded"></div>
+<div class="h-1.5 w-full bg-border-base/70 rounded"></div>
+<div class="h-1.5 w-5/6 bg-border-base/70 rounded"></div>
+<div class="h-1.5 w-2/3 bg-border-base/60 rounded"></div>
+</div>
+<div class="flex items-center justify-between pt-2 border-t border-border-base/60">
+<span class="text-[10px] font-label-sm text-text-muted">Eon Design Scope v2.1</span>
+<span class="material-symbols-outlined text-error" style="font-size: 18px;">picture_as_pdf</span>
+</div>
+</div>
+<!-- File Info -->
+<div class="mt-3">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-error" style="font-size: 18px;">description</span>
+<span class="text-label-md font-label-md font-semibold text-text-primary truncate">proposal.pdf</span>
+</div>
+<div class="flex items-center justify-between mt-2 pt-2 border-t border-border-base text-body-sm font-body-sm text-text-secondary">
+<span class="">4.2 MB • Yesterday</span>
+<span class="inline-flex items-center gap-1 text-[11px] font-medium text-folder-music">
+<span class="w-1.5 h-1.5 rounded-full bg-folder-music"></span>
+                    Cloud Synced
+                  </span>
+</div>
+</div>
+</div>
+<!-- File 3: office-redesign.jpg -->
+<div class="bg-surface-primary hover:bg-surface-hover rounded-xl p-3.5 border border-border-base relative shadow-sm cursor-pointer transition-all duration-150">
+<div class="flex items-center justify-between">
+<span class="px-2 py-0.5 rounded bg-secondary-fixed text-primary text-[10px] font-label-sm font-semibold uppercase">JPG</span>
+<button class="p-1 rounded text-text-muted hover:text-text-primary hover:bg-surface-secondary">
+<span class="material-symbols-outlined" style="font-size: 18px;">more_horiz</span>
+</button>
+</div>
+<!-- Image Preview Card -->
+<div class="mt-2 h-32 rounded-lg bg-surface-secondary border border-border-base overflow-hidden relative">
+<img class="w-full h-full object-cover" data-alt="Modern Scandinavian workspace interior with light oak desks, minimalist matte black lamps, warm neutral plastered walls, potted fiddle leaf fig tree, and natural sunlight casting gentle geometric shadows." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJqCtr55v7THmWmx8cSTLvKFIjahpWQS4R6qkuuGXBt6Oe3r2hnYU40yYHj6Y76A2q4Er9Mi3X2t4MJupN8AZNP75PdcJgcmRTSaebkE2KLaBOODawb1qRUDdYst8nmnf3QL1y0bCikuJa51Bhgr6Iwug5DzH2jikwDi4-FebgQki9_l7bgEHVDCkCNzIdzacH7f41VAyDz7BohaXaniwAcEQYTh4inJcRXAfK3ZlwYg5OEoAT3YGjXw">
+<span class="absolute bottom-2 right-2 px-1.5 py-0.5 rounded bg-text-primary/70 text-surface-primary text-[10px] font-label-sm">4000×3000</span>
+</div>
+<div class="mt-3">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-folder-photos" style="font-size: 18px;">image</span>
+<span class="text-label-md font-label-md font-semibold text-text-primary truncate">office-redesign.jpg</span>
+</div>
+<div class="flex items-center justify-between mt-2 pt-2 border-t border-border-base text-body-sm font-body-sm text-text-secondary">
+<span class="">8.1 MB • Sep 27</span>
+<span class="inline-flex items-center gap-1 text-[11px] font-medium text-folder-music">
+<span class="w-1.5 h-1.5 rounded-full bg-folder-music"></span>
+                    Synced
+                  </span>
+</div>
+</div>
+</div>
+<!-- File 4: project-assets.zip -->
+<div class="bg-surface-primary hover:bg-surface-hover rounded-xl p-3.5 border border-border-base relative shadow-sm cursor-pointer transition-all duration-150">
+<div class="flex items-center justify-between">
+<span class="px-2 py-0.5 rounded bg-surface-secondary text-text-secondary text-[10px] font-label-sm font-semibold uppercase">ZIP Archive</span>
+<button class="p-1 rounded text-text-muted hover:text-text-primary hover:bg-surface-secondary">
+<span class="material-symbols-outlined" style="font-size: 18px;">more_horiz</span>
+</button>
+</div>
+<div class="mt-2 h-32 rounded-lg bg-surface-secondary border border-border-base flex flex-col items-center justify-center p-3 text-center">
+<span class="w-12 h-12 rounded-xl bg-surface-primary border border-border-base flex items-center justify-center text-folder-downloads shadow-xs mb-1">
+<span class="material-symbols-outlined material-symbols-fill" style="font-size: 26px;">folder_zip</span>
+</span>
+<span class="text-[11px] font-label-sm text-text-muted">18 Vector Components</span>
+</div>
+<div class="mt-3">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-folder-downloads" style="font-size: 18px;">folder_zip</span>
+<span class="text-label-md font-label-md font-semibold text-text-primary truncate">project-assets.zip</span>
+</div>
+<div class="flex items-center justify-between mt-2 pt-2 border-t border-border-base text-body-sm font-body-sm text-text-secondary">
+<span class="">420 MB • Sep 25</span>
+<span class="inline-flex items-center gap-1 text-[11px] font-medium text-folder-music">
+<span class="w-1.5 h-1.5 rounded-full bg-folder-music"></span>
+                    Synced
+                  </span>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</main>
+<!-- RIGHT FILE DETAILS INSPECTOR DRAWER (Contextual for product-video.mp4) -->
+<aside class="w-80 h-full bg-surface-primary border-l border-border-base shrink-0 flex flex-col justify-between overflow-y-auto z-20 shadow-sm hidden 2xl:flex">
+<!-- Drawer Header -->
+<div>
+<div class="p-space-md border-b border-border-base flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-folder-videos" style="font-size: 20px;">info</span>
+<h3 class="text-headline-sm font-headline-sm font-semibold text-text-primary">File Details</h3>
+</div>
+<button class="p-1 rounded-lg text-text-muted hover:text-text-primary hover:bg-surface-hover">
+<span class="material-symbols-outlined" style="font-size: 18px;">close</span>
+</button>
+</div>
+<!-- File Hero Preview -->
+<div class="p-space-md space-y-4">
+<div class="relative rounded-xl overflow-hidden border border-border-base bg-surface-secondary aspect-video flex items-center justify-center shadow-inner group">
+<img class="w-full h-full object-cover" data-alt="Cinematic production studio video still showcasing a minimalist workspace with clean natural wooden tables, warm sunlight, gentle shadows, and aesthetic design tools in soft focus." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhgbwSYHfIXwOzwYjXN2mZpVelwdbtpJFhGDyebyEiENmM1rKu6IsJqrflFcYVgK4ZF9LKEfVF_MrTBEyapcBW2fgzNHiCrnPy5cQaECgLodIqKDrQoyOhMsYCdT4G3Ijr-lSNHgrNOaSTbWlvTVn_tWpXUg3-0gQTym47Fj1rpXdkCg6mA5YuFweWpoZlQF-vqyX8nAkKaDGbCMPKSkOnsQs6BOzs5eeX7OmWKjOy1KPRY0xH0QmgWQ">
+<div class="absolute inset-0 bg-text-primary/20 backdrop-blur-[1px]"></div>
+<div class="w-11 h-11 rounded-full bg-surface-primary/95 text-text-primary flex items-center justify-center shadow-lg group-hover:scale-105 transition-transform cursor-pointer">
+<span class="material-symbols-outlined material-symbols-fill" style="font-size: 24px;">play_arrow</span>
+</div>
+<span class="absolute bottom-2.5 right-2.5 px-2 py-0.5 rounded-md bg-text-primary/80 text-surface-primary text-[11px] font-label-sm font-semibold">04:18</span>
+</div>
+<div>
+<h4 class="text-headline-sm font-headline-sm font-bold text-text-primary break-all">product-video.mp4</h4>
+<p class="text-body-sm font-body-sm text-text-muted mt-0.5">High definition 4K marketing cut</p>
+</div>
+<!-- Metadata List -->
+<div class="space-y-2.5 pt-2 border-t border-border-base text-body-sm font-body-sm">
+<div class="flex items-center justify-between py-1 border-b border-border-base/50">
+<span class="text-text-muted">Type</span>
+<span class="font-medium text-text-primary">MP4 Video (H.264)</span>
+</div>
+<div class="flex items-center justify-between py-1 border-b border-border-base/50">
+<span class="text-text-muted">Size</span>
+<span class="font-medium text-text-primary">2.4 GB (2,576,980,377 B)</span>
+</div>
+<div class="flex items-center justify-between py-1 border-b border-border-base/50">
+<span class="text-text-muted">Location</span>
+<span class="font-medium text-primary-container truncate max-w-[160px]">Eon Space / Projects</span>
+</div>
+<div class="flex items-center justify-between py-1 border-b border-border-base/50">
+<span class="text-text-muted">Created</span>
+<span class="font-medium text-text-primary">Sep 28, 2026</span>
+</div>
+<div class="flex items-center justify-between py-1 border-b border-border-base/50">
+<span class="text-text-muted">Modified</span>
+<span class="font-medium text-text-primary">Today at 10:14 AM</span>
+</div>
+<div class="flex items-center justify-between py-1 border-b border-border-base/50">
+<span class="text-text-muted">Storage Status</span>
+<span class="inline-flex items-center gap-1.5 font-medium text-folder-music">
+<span class="w-2 h-2 rounded-full bg-folder-music"></span>
+                Cloud Synced
+              </span>
+</div>
+<div class="py-1">
+<span class="text-text-muted block mb-1">Available Devices</span>
+<div class="flex items-center gap-1.5 flex-wrap">
+<span class="px-2 py-0.5 rounded bg-surface-secondary border border-border-base text-text-secondary text-[11px] font-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined" style="font-size: 13px;">laptop_mac</span>
+                  Windows PC
+                </span>
+<span class="px-2 py-0.5 rounded bg-surface-secondary border border-border-base text-text-secondary text-[11px] font-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined" style="font-size: 13px;">phone_android</span>
+                  Samsung Galaxy S24
+                </span>
+</div>
+</div>
+</div>
+<!-- Tags & Collaborators -->
+<div class="pt-2 border-t border-border-base">
+<span class="text-text-muted text-[11px] font-label-sm font-semibold uppercase tracking-wider block mb-2">Workspace Collaborators</span>
+<div class="flex items-center gap-1.5">
+<img class="w-6 h-6 rounded-full border border-border-base" data-alt="Portrait of design collaborator with warm natural light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbxIRJabMn57CDsxmujpaC79LzF2g3mV2dq588W7_fi_zzhQqfiR_KJEIZrTGrBj_8vYkMFJ0Mn_ShKiVn2qjbBHmooq_mO0J9vGPddzQp3vr981NVkF5FiY8Z69Km4HvEKalFfWsrAsYi25REls5RW0nQucc7iN6xfS2ZGCoj0-7Er5xlPU1akuNjX5x0ADYTlNfF7b0tzx_mMiOH6jR6jyYpsbmE1v9qVAcpPWajwBTxfFDjvXL3dQ">
+<img class="w-6 h-6 rounded-full border border-border-base" data-alt="Portrait of senior product manager in light tone studio" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9lcmsSKib0wAp8kJHAZb9uxugOqJyHDMmGql1t3psPlLbd1KmXDPs5xRCpeD_vncHHka2_FGd1DciD_KypBu1WCv77Lrg1ZkQLzknYSTSEgMcKnNDuxGjERR4mJZn7eaOwOCNUsbbsixqC1RUbPpGmFFNHFk-0N7FXGjScGV-af2UimRbiC8GpKaOoENh6743m_BU364Yp43bXqCK6yDr9ygeb539uJC4rV4qAdiGD1dF4XVtCA-3Ew">
+<div class="w-6 h-6 rounded-full bg-surface-secondary border border-border-base flex items-center justify-center text-[10px] font-semibold text-text-muted">+4</div>
+<button class="ml-auto text-label-sm font-label-sm text-primary-container hover:underline">+ Invite</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Drawer Bottom Actions -->
+<div class="p-space-md border-t border-border-base space-y-2 bg-surface-secondary/40">
+<button class="w-full flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg bg-[#111111] hover:bg-neutral-800 text-white font-headline-sm text-headline-sm transition-all duration-150 shadow-sm active:scale-[0.98]"><span class="material-symbols-outlined" style="font-size: 20px;">add</span><span class="text-label-lg font-label-lg text-white">+ Upload File</span></button>
+<div class="grid grid-cols-2 gap-2">
+<button class="flex items-center justify-center gap-1.5 py-2 px-3 rounded-lg bg-surface-primary hover:bg-surface-hover border border-border-base text-text-primary text-label-md font-label-md transition-colors">
+<span class="material-symbols-outlined" style="font-size: 16px;">share</span>
+<span class="">Share Link</span>
+</button>
+<button class="flex items-center justify-center gap-1.5 py-2 px-3 rounded-lg bg-surface-primary hover:bg-surface-hover border border-border-base text-text-primary text-label-md font-label-md transition-colors">
+<span class="material-symbols-outlined" style="font-size: 16px;">folder_open</span>
+<span class="">Open in Folder</span>
+</button>
+</div>
+</div>
+</aside>
+</div>
+<!-- FLOATING COLLAPSIBLE UPLOAD TRAY AT BOTTOM-RIGHT -->
+<div class="fixed bottom-4 right-6 z-50 w-88 max-w-[calc(100vw-2rem)] bg-surface-primary rounded-xl border border-border-base shadow-2xl overflow-hidden transition-all duration-200" style="width: 350px;">
+<!-- Tray Header -->
+<div class="px-4 py-3 bg-surface-secondary border-b border-border-base flex items-center justify-between cursor-pointer">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container animate-pulse"></span>
+<span class="text-label-md font-label-md font-semibold text-text-primary">Uploading 3 files</span>
+<span class="text-label-sm font-label-sm text-text-muted">(1.8 GB remaining)</span>
+</div>
+<div class="flex items-center gap-1">
+<button class="p-1 rounded text-text-secondary hover:text-text-primary hover:bg-surface-hover" title="Minimize Tray">
+<span class="material-symbols-outlined" style="font-size: 18px;">keyboard_arrow_down</span>
+</button>
+<button class="p-1 rounded text-text-secondary hover:text-text-primary hover:bg-surface-hover" title="Close Panel">
+<span class="material-symbols-outlined" style="font-size: 18px;">close</span>
+</button>
+</div>
+</div>
+<!-- Active Upload File List -->
+<div class="p-3 space-y-3 bg-surface-primary max-h-64 overflow-y-auto">
+<!-- Upload Item 1: product-video.mp4 (78% with animated blue bar) -->
+<div class="p-2.5 rounded-lg bg-surface-secondary/50 border border-border-base/70">
+<div class="flex items-center justify-between mb-1.5">
+<div class="flex items-center gap-2 min-w-0">
+<span class="material-symbols-outlined text-folder-videos" style="font-size: 18px;">movie</span>
+<span class="text-label-sm font-label-sm font-semibold text-text-primary truncate">product-video.mp4</span>
+</div>
+<div class="flex items-center gap-2 shrink-0">
+<span class="text-[11px] font-label-sm font-semibold text-primary">78%</span>
+<button class="text-text-muted hover:text-text-primary" title="Pause">
+<span class="material-symbols-outlined" style="font-size: 16px;">pause</span>
+</button>
+<button class="text-text-muted hover:text-error" title="Cancel">
+<span class="material-symbols-outlined" style="font-size: 16px;">cancel</span>
+</button>
+</div>
+</div>
+<div class="w-full bg-border-base/60 h-1.5 rounded-full overflow-hidden">
+<div class="bg-primary-container h-full rounded-full transition-all duration-300" style="width: 78%;"></div>
+</div>
+<div class="flex justify-between items-center mt-1 text-[10px] text-text-muted font-body-sm">
+<span class="">1.87 GB of 2.4 GB</span>
+<span class="">12.4 MB/s • 42s left</span>
+</div>
+</div>
+<!-- Upload Item 2: project.zip (42%) -->
+<div class="p-2.5 rounded-lg bg-surface-secondary/50 border border-border-base/70">
+<div class="flex items-center justify-between mb-1.5">
+<div class="flex items-center gap-2 min-w-0">
+<span class="material-symbols-outlined text-folder-downloads" style="font-size: 18px;">folder_zip</span>
+<span class="text-label-sm font-label-sm font-semibold text-text-primary truncate">project.zip</span>
+</div>
+<div class="flex items-center gap-2 shrink-0">
+<span class="text-[11px] font-label-sm font-semibold text-text-secondary">42%</span>
+<button class="text-text-muted hover:text-text-primary" title="Pause">
+<span class="material-symbols-outlined" style="font-size: 16px;">pause</span>
+</button>
+<button class="text-text-muted hover:text-error" title="Cancel">
+<span class="material-symbols-outlined" style="font-size: 16px;">cancel</span>
+</button>
+</div>
+</div>
+<div class="w-full bg-border-base/60 h-1.5 rounded-full overflow-hidden">
+<div class="bg-secondary-container h-full rounded-full transition-all duration-300" style="width: 42%;"></div>
+</div>
+<div class="flex justify-between items-center mt-1 text-[10px] text-text-muted font-body-sm">
+<span class="">176 MB of 420 MB</span>
+<span class="">Queued after video</span>
+</div>
+</div>
+<!-- Upload Item 3: proposal.pdf (Complete ✓) -->
+<div class="p-2.5 rounded-lg bg-surface-secondary/30 border border-border-base/50 flex items-center justify-between">
+<div class="flex items-center gap-2 min-w-0">
+<span class="material-symbols-outlined text-error" style="font-size: 18px;">picture_as_pdf</span>
+<span class="text-label-sm font-label-sm font-medium text-text-secondary truncate">proposal.pdf</span>
+</div>
+<div class="flex items-center gap-1.5 text-folder-music text-label-sm font-label-sm font-semibold">
+<span class="">Complete</span>
+<span class="material-symbols-outlined text-folder-music material-symbols-fill" style="font-size: 16px;">check_circle</span>
+</div>
+</div>
+</div>
+<!-- Quick Footer Action -->
+<div class="px-3 py-2 bg-surface-secondary/70 border-t border-border-base flex items-center justify-between text-body-sm font-body-sm">
+<span class="text-[11px] font-label-sm text-text-muted">Encrypted via AES-256</span>
+<div class="flex items-center gap-2">
+<button class="text-label-sm font-label-sm text-text-secondary hover:text-text-primary">Pause All</button>
+<span class="text-border-base">•</span>
+<button class="text-label-sm font-label-sm text-error hover:underline">Cancel</button>
+</div>
+</div>
+</div>
+</body></html>

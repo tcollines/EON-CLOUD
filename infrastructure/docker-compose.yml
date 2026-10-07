@@ -1,0 +1,36 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:15
+    environment:
+      POSTGRES_USER: eon
+      POSTGRES_PASSWORD: eonpassword
+      POSTGRES_DB: eondb
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./schema.sql:/docker-entrypoint-initdb.d/schema.sql
+
+  minio:
+    image: adobe/s3mock:latest
+    ports:
+      - "9000:9090"
+      - "9001:9191"
+    environment:
+      initialBuckets: "eon-chunks"
+    volumes:
+      - minio_data:/data
+
+  redis:
+    image: redis:7
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+
+volumes:
+  postgres_data:
+  minio_data:
+  redis_data:
